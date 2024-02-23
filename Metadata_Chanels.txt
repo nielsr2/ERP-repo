@@ -1,0 +1,10 @@
+Metadata_Chanel_1: Label of the trigger (e.g. Cross, Start_395_HardBoiledOr.mp4, End_395_HardBoiledOr.mp4, Stimulus_395_HardBoiledOr.mp4)
+Metadata_Chanel_2: Position of the stimulus [1,4]
+Metadata_Chanel_3: Is the stimulus in a cut? [0,1]
+Metadata_Chanel_4: Kind of stimulus [1,4]
+Metadata_Chanel_5: Is the film B&W? [0,1]
+
+Cross -> line 249, after if image.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+Start -> line 408, after if movie.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+Trigger -> line 446, after tp=routineTimer.getTime()
+End -> line 454, after movie.stop()
