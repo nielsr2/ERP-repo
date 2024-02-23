@@ -413,7 +413,7 @@ for Adr in videos:
             win.timeOnFlip(movie, 'tStartRefresh')  # time at next scr refresh
             # update status
             movie.status = STARTED
-            #movie.setAutoDraw(True)
+            movie.setAutoDraw(True)
             movie.play()
         if movie.isFinished:  # force-end the routine
             continueRoutine = False
@@ -434,7 +434,7 @@ for Adr in videos:
         
         # refresh the screen and TRIGGERS
         if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen / niels
-            movie.draw()
+            #movie.draw()
             win.flip()
             FrameCounter=movie.frameIndex + 1
             for VarOrd in Orden: #CHECK FOR OUTPUT / NIELS
