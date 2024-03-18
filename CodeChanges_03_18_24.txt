@@ -1,0 +1,9 @@
+New lines: 12, 32-37, 52-62, 411-414, 430, 472, 483 and 599
+
+
+Delete lines (Change for 52-57):
+		Delete->	videos = UserRow[1:]
+				random.shuffle(videos)
+
+
+Keep line (change for 59-62):	logging.console.setLevel(logging.WARNING)
