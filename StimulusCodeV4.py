@@ -11,7 +11,7 @@ import pandas as pd
 from openpyxl import load_workbook
 import datetime #5_3_24
 
-from PIL import ImageGrab #Revision
+#from PIL import ImageGrab #Revision
 
 ############################CONFIGURE######################################
 
@@ -57,9 +57,7 @@ random.shuffle(videos2)
 videos=videos1+videos2
 
 # Console warning / 5_3_24
-#logFile = logging.LogFile('LogExp.log', level=logging.WARNING, filemode='a', encoding='utf-8')
 logging.console.setLevel(logging.WARNING)
-#print ("Fecha y hora = %s" % datetime.datetime.now())
 Registro = open("Reg.txt", "a")
 Registro.write("\n\nFecha y hora = %s\n" % datetime.datetime.now())
 
@@ -466,8 +464,8 @@ for Adr in videos:
             #print(FrameCounter)
             for VarOrd in Orden: #CHECK FOR OUTPUT / NIELS
                 if FrameCounter==listado[VarOrd] and routineTimer.getTime()-tp>0.9: #-1 para revision del frame blanco
-                    screenshot = ImageGrab.grab() #DELETE: Capture frame
-                    screenshot.save('screenshot'+ str(x)+'.png')#DELETE: Capture frame
+                    #screenshot = ImageGrab.grab() #DELETE: Capture frame
+                    #screenshot.save('screenshot'+ str(x)+'.png')#DELETE: Capture frame
                     x += 1
                     tp=routineTimer.getTime()
                     print('OUTPUT:',"Ch1:",'Trigger_'+Metadata[0],"/// Ch2:",VarOrd+1,'of',Metadata[2], "/// Ch3:", Cut[VarOrd], "/// Ch4:", Kind[VarOrd], "/// Ch5:", Metadata[5]) #OUTPUT / NIELS
